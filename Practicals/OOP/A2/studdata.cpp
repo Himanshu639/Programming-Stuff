@@ -78,7 +78,7 @@ class Studdata {
                     throw "Invalid input, please try again\n";
                 }
                 
-            } catch (const char* e) {
+            } catch (const string e) {
                 cerr << e <<endl;
                 goto point2;
             }
@@ -93,7 +93,7 @@ class Studdata {
                     throw "Invalid input, please try again\n";
                 }
                 
-            } catch (const char* e) {
+            } catch (const string e) {
                 cerr << e <<endl;
                 goto point3;
             }
