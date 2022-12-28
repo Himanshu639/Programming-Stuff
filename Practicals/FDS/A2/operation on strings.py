@@ -1,6 +1,6 @@
 ''' 
 Assignment No. 2
-Problem Statement:- Finding longest string, higest occurance character from a string, Finding whether the string is palindrome, index of substring in main string and occurance of each word in a given string
+Problem Statement:- Finding longest string, determine the frequency of occurrence of particular character from a string, Finding whether the string is palindrome, index of substring in main string and occurance of each word in a given string
 '''
 
 
@@ -35,7 +35,7 @@ def _long():
     word=""
     s=input("Enter a string:- ")
     for i in range(len(s)):
-        if s[i]!=' ' and s[i]!=',' and s!=['.']:
+        if s[i]!=' ' and s[i]!=',' and s!='.':
             word+=s[i]
         if s[i]==' ' or (len(s)-1)==i:
             if len(m_word)<len(word):
@@ -70,7 +70,7 @@ def occ():
 			if check[i]==check1[j]:
 				count+=1
 		print("%s: %d" %(check[i],count))
-		print("\n\n\n")
+		print("\n")
     	
 def sub():
 	s= input("enter main string:- ")
@@ -89,7 +89,7 @@ def sub():
         
 
 while True:
-	print("Which operation do you want to perform?\n1. Find longest string\n2. Find higest occurance character from a string\n3. Find whether the string is palindrome\n4. index\n5. find substring\n 6. exit\n")
+	print("Which operation do you want to perform?\n1. Find longest string\n2. Find occurance of a particular character from a string\n3. Find whether the string is palindrome\n4. Find the occurrences of each word in a given string\n5. Find the index of a substring from the main string\n6. exit\n")
 	ip= int(input("Enter the input:- "))
 	if ip==1:
 		_long()
